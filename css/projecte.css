@@ -783,3 +783,124 @@ top: -15px;
 
 }
 /* end skills */
+/* start qoate */
+.qoate{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;;
+}
+.qoate::before{
+content: '';
+position: absolute;
+left: 0%;
+top: 0%;
+width: 100%;
+height: 100%;
+background-color: rgb( 0 0 0 / 55%);
+}
+.qoate .container{
+    position: relative;
+    
+}
+.qoate q{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* end qoate */
+/* start pricing  */
+.pricing{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding); 
+}
+.pricing .plans{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 40px;
+}
+.pricing .plans .plan{
+background-color: #fcfcfc;
+text-align: center;
+}
+.pricing .plans .plan .head {
+    padding: 40px 20px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan .head h2{
+font-weight: normal;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+.pricing .plans .plan .head span{
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+.pricing .plans .plan .head span::before{
+content: "$";
+font-size: 20px;
+    position: relative;
+    top: -30px;
+    margin-right: 24px;
+    font-weight: normal;
+}
+.pricing .plans .plan .head span::after{
+content: "/mo";
+font-size: 20px;
+position:relative;
+right: -20px;
+
+}
+.pricing .plans .plan ul{
+border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li{
+padding: 20px;
+position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after{
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    bottom: 0%;
+}
+.pricing .plans .plan .foot a{
+    display: block;
+    padding: 10px 20px ;
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    margin: 30px auto;
+    width: fit-content;
+}
+.pricing .contact{
+text-align: center;
+margin: 50px auto 20px;
+font-size: 20px;
+
+}
+.pricing .contact-link{
+display: block;
+width: fit-content;
+margin: 20px auto;
+background-color: var(--main-color);
+text-decoration: none;
+color: white;
+padding: 15px 30px;
+}
+
+/* end pricing */
