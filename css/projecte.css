@@ -902,5 +902,212 @@ text-decoration: none;
 color: white;
 padding: 15px 30px;
 }
-
 /* end pricing */
+/* start subscribe */
+.subscribe{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding); 
+    background-image: url(https://images.ctfassets.net/hrltx12pl8hq/5KiKmVEsCQPMNrbOE6w0Ot/341c573752bf35cb969e21fcd279d3f9/hero-img_copy.jpg?fit=fill&w=800&h=300); 
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.subscribe::before{
+    content: '';
+position: absolute;
+left: 0%;
+top: 0%;
+width: 100%;
+height: 100%;
+background-color: rgb( 0 0 0 / 55%);
+}
+.subscribe .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .subscribe .container{
+        flex-direction: column;
+    }
+}
+.subscribe form{
+display: flex;
+position: relative;
+width: 500px;
+max-width: 100%;
+}
+.subscribe form i{ 
+    position: absolute;
+     top: 50%;
+     left: 24px;
+     transform: translateY(-50%); 
+}
+.subscribe form input[type="email"]{
+border: 1px solid white;
+border-right: none;
+background: none;
+
+padding: 20px 20px 20px 60px;
+caret-color: var(--main-color);
+width: calc(100% - 130px);
+}
+.subscribe form input[type="submit"]{
+width: 130px ;
+background-color: var(--main-color);
+color: white;
+padding: 10px 20px ;
+border: 1px solid white;
+border-left: none;
+text-transform: uppercase;
+}
+.subscribe form ::placeholder{
+    color: #777;
+}
+.subscribe form input[type="email"]:focus,
+.subscribe form input[type="submit"]:focus{
+    outline: none;
+}
+.subscribe p{
+    line-height: 2;
+    margin-left: 50px;
+}
+@media (max-width: 991px) {
+    .subscribe p{
+        margin: 30px 0 0;
+    }
+}
+input, select, textarea{
+    color: white;
+}
+/* end subscribe */
+/* start contact us */
+.contact-us{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact-us .contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us .contact form{
+    flex-basis:70% ;
+}
+.contact-us .contact form .main-input{
+padding: 20px;
+display: block;
+border: 1px solid #ccc;
+margin-bottom: 30px;
+width: 100%;
+}
+.contact-us .contact form .main-input:focus{
+    outline: none;
+}
+.contact-us .contact form textarea.main-input{
+    height: 200px;
+}
+.contact-us .contact form input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+ input, select, textarea{
+    color: black;
+}
+.contact-us .contact .info{
+flex-basis: 25%;
+}
+@media (max-width: 767px) {
+    .contact-us .contact .info{
+        order: -1;
+        text-align: center;
+    }
+}
+.contact-us .contact .info h4{
+text-transform: uppercase;
+margin-bottom: 30px;
+font-weight: 500;
+font-size: 18px;
+}
+.contact-us .contact .info .phone{
+display: block;
+color: #777;
+margin-bottom: 10px;
+}
+.contact-us .contact .info h4:nth-of-type(2){
+margin-top: 100px;
+}
+@media (max-width: 767px) {
+    .contact-us .contact .info h4:nth-of-type(2){
+        margin-top: 30px;
+    }
+}
+.contact-us .contact address{
+color:#777;
+line-height: 2;
+}
+@media (max-width: 767px) {
+    .contact-us .contact address{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-us .contact{
+        flex-direction: column;
+    }
+}
+/*  end contact us*/
+/* start footer */
+.footer img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.footer{
+    padding-top: calc( var(--main-color) / 2);
+    padding-bottom: calc(var(--main-color) / 2);
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/196/579/small/modern-abstract-geometric-background-free-vector.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.footer::before{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb( 0 0 0 / 60%);
+}
+.footer .container{
+    position: relative;
+}
+.footer p:not(.copyright-text){
+text-transform: uppercase;
+padding: 10px;
+border-bottom: 1px solid white;
+width: fit-content;
+font-size: 22px;
+margin: 20px auto;
+}
+.footer .icons i{
+padding: 10px 15px;
+}
+.footer .copyright-text{
+margin-top: 60px;
+line-height: 2;
+}
+.footer .copyright-text span{
+font-weight: bold;
+color: var(--main-color);
+}
+/* end footer */
